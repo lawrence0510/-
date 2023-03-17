@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".FragmentProfile">
+
+
+    <TextView
+        android:layout_width="122dp"
+        android:layout_height="66dp"
+        android:gravity="center"
+        android:autoSizeMaxTextSize="100sp"
+        android:autoSizeMinTextSize="12sp"
+        android:autoSizeStepGranularity="2sp"
+        android:autoSizeTextType="uniform"
+        android:text="瘋狂做菜" />
+
+
+
+    <EditText
+        android:layout_marginTop="30dp"
+        android:id="@+id/etAccount"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_baseline_account_box_24"
+        android:hint="帳號"
+        android:singleLine="true"/>
+
+    <EditText
+        android:id="@+id/etPassword"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:drawableStart="@drawable/ic_baseline_lock_24"
+        android:hint="密碼"
+        android:singleLine="true"/>
+
+    <Button
+        android:layout_marginTop="30dp"
+        android:id="@+id/btLogin"
+        android:onClick="login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="登入" />
+
+    <TextView
+        android:id="@+id/tvNewAccount"
+        android:layout_width="122dp"
+        android:layout_height="37dp"
+        android:gravity="center"
+        android:text="建立帳戶" />
+
+    <Button
+        android:id="@+id/btAbout"
+        android:layout_width="74dp"
+        android:layout_height="32dp"
+        android:text="關於我們"
+        android:textSize="8sp" />
+
+    <Button
+        android:id="@+id/btContact"
+        android:layout_width="74dp"
+        android:layout_height="32dp"
+        android:text="聯絡我們"
+        android:textSize="8sp" />
+
+</LinearLayout>
